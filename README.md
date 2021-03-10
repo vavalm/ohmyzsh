@@ -26,9 +26,17 @@ To learn more, visit [ohmyz.sh](https://ohmyz.sh), follow [@ohmyzsh](https://twi
 - `curl` or `wget` should be installed
 - `git` should be installed (recommended v2.4.11 or higher)
 
-### Basic Installation
+#### Installation
 
 Oh My Zsh is installed by running one of the following commands in your terminal. You can install this via the command-line with either `curl`, `wget` or another similar tool.
+
+##### Personal config
+git clone --recurse-submodules https://github.com/vavalm/ohmyzsh.git ~/.oh-my-zsh
+```shell
+cp ~/.oh-my-zsh/custom.zshrc ~/.zshrc
+```
+
+##### official config
 
 | Method    | Command                                                                                           |
 |:----------|:--------------------------------------------------------------------------------------------------|
@@ -63,18 +71,6 @@ vi ~/.zshrc
 
 For example, this might begin to look like this:
 
-```shell
-plugins=(
-  git
-  bundler
-  dotenv
-  osx
-  rake
-  rbenv
-  ruby
-)
-```
-
 _Note that the plugins are separated by whitespace (spaces, tabs, new lines...). **Do not** use commas between them or it will break._
 
 #### Using Plugins
@@ -90,10 +86,6 @@ We'll admit it. Early in the Oh My Zsh world, we may have gotten a bit too theme
 _Robby's theme is the default one. It's not the fanciest one. It's not the simplest one. It's just the right one (for him)._
 
 Once you find a theme that you'd like to use, you will need to edit the `~/.zshrc` file. You'll see an environment variable (all caps) in there that looks like:
-
-```shell
-ZSH_THEME="robbyrussell"
-```
 
 To use a different theme, simply change the value to match the name of your desired theme. For example:
 
@@ -207,10 +199,6 @@ cp ~/.zshrc ~/.zshrc.orig
 
 You can create a new zsh config file by copying the template that we have included for you.
 
-```shell
-cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
-```
-
 ##### 4. Change your default shell
 
 ```shell
@@ -301,7 +289,7 @@ We're on social media:
 
 ## Merchandise
 
-We have [stickers, shirts, and coffee mugs available](https://shop.planetargon.com/collections/oh-my-zsh?utm_source=github) for you to show off your love of Oh My Zsh. Again, you will become the talk of the town!
+Take a look on the initial [zsh repository](https://github.com/ohmyzsh/ohmyzsh)
 
 ## License
 
